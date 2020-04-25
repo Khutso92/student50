@@ -1,13 +1,24 @@
-from flask import Flask
+from flask import Flask,render_template
 
 app = Flask(__name__)
-
+      app.debug = True
+      app.run()
 @app.route("/")
 def index():
-    return "<br>Hello world<br>"
+    return render_template("index.html")
 
 
-@app.route('hello/')
-def hello():
-    return "hello there"
+
+
+
+
+
+
+
+
+
+
+
+
+
 
